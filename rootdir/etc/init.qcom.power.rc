@@ -103,12 +103,6 @@ on early-init
     write /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq 300000
     write /sys/devices/system/cpu/cpu4/cpufreq/schedutil/rtg_boost_freq 0
     
-    # Input boost settings
-    write /sys/devices/system/cpu/cpu_boost/input_boost_freq "0:1190000"
-    write /sys/devices/system/cpu/cpu_boost/input_boost_ms 120
-    write /sys/devices/system/cpu/cpu_boost/powerkey_input_boost_freq "0:1900800 1:0 2:0 3:0 4:2400000 5:0 6:0 7:0"
-    write /sys/devices/system/cpu/cpu_boost/powerkey_input_boost_ms 400
-    
     # Disable UFS clock scaling
     write /sys/bus/platform/devices/4804000.ufshc/clkscale_enable 0
 
